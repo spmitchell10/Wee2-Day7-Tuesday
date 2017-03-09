@@ -1,0 +1,121 @@
+$blue: #79C0E7;
+
+.post{
+	display: block;
+	margin: 0px auto;
+	font-family: 'Raleway', sans-serif;
+	padding: 13px;
+
+	.left{
+		display: inline-block;
+		width: 20%;
+		text-align: right;
+		vertical-align: top;
+
+		h2{
+			color:$blue;
+		}
+
+		h6{
+			color: #BFD0DD;
+		}
+	}
+
+	.middle{
+		display: inline-block;
+		width: 5%;
+		text-align: center;
+		position: relative;
+
+		.phone > i {
+			z-index: 5;
+			position: relative;
+			color: white;
+		}
+
+		i{
+			width: 5px;
+			height: 5px;
+		}
+
+		.line{
+			background-color: $blue;
+			width: 5px;
+			height: 215px;
+			display: inherit;
+		}
+
+		.circle{
+			background-color: darken($blue, 20);
+			border-radius: 50%;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+    		top: -4px !important;
+    		right: 15px;
+    		border: 5px solid $blue;
+		}
+	}
+
+	.right{
+		display: inline-block;
+		width: 60%;
+		background-color: $blue;
+		padding: 10px;
+		border-radius: 5px;
+		vertical-align: top;
+		position:relative;
+
+
+		.arrow{
+			width: 20px;
+			height: 20px;
+			background-color: $blue;
+			position: absolute;
+			top: 20px;
+			left: -10px;
+			transform: rotate(45deg);
+
+		}
+
+
+		h3{
+			border-bottom: 1px solid white;
+		}
+
+		h3, p{
+			color:white;
+			padding: 5px;
+		}
+
+		p{
+			font-size: 12px;
+		}
+	}
+}
+
+.containter2 {
+	margin-top:-35px;
+
+	.right{
+		background-color: darken($blue, 20);
+		.arrow{
+			background-color: darken($blue, 20);
+		}
+	}
+
+}
+
+.containter3 {
+	margin-top:-35px;
+
+	.right{
+		background-color: $blue;
+	}
+
+}
+
+// Screen sizing code
+
+@import 'responsive';
+
